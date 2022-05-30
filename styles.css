@@ -1,0 +1,181 @@
+body {
+    background-color: #E0E8FF;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.img-top {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff;
+    width: 327px;
+    height: 567px;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* SUMMARY SECTION */
+
+.summary {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+h1 {
+    color: #1F2E55;
+    font-size: 1.375rem;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.title-paragraph {
+   color: #717FA6;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 25px;
+   margin: 16px auto 24px auto;
+   width: 263px;
+}
+
+/* ANNUAL PLAN */
+
+.annual-plan-container {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 11px;
+    width: 279px;
+    height: 81px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.music-icon {
+    width: 48px;
+    height: 48px;
+    margin: 17px 20px 0 16px;  
+}
+
+.paragraph-bold {
+    font-size: 14px;
+    font-weight: 900;
+    color: #1F2E55;
+    margin: 21px 50px 3px 0;
+}
+
+.price-year {
+    font-weight: 500;
+    font-size: 14px;
+    color: #717FA6;
+    margin: 0 50px 0 0;
+}
+
+.change {
+    color: #382AE1;
+    margin-top: 32px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* PAYMENT */
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    font-size: 15px;
+    margin: 24px 0 24px 0;
+    padding: 1.2em 4.5em;
+    border: none;
+    border-radius: 11px;
+    color: #ffffff;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.cancel-order {
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 900;
+    display: block;
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 376px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: repeat-x;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        width: 450px;
+        height: 717px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-top: 45px;
+    }
+
+    .title-paragraph {
+        font-size: 1rem;
+        line-height: 26px;
+        width: 354px;
+        margin-bottom: 20px;
+    }
+
+    .annual-plan-container {
+        width: 354px;
+        height: 98px;
+    }
+
+    .music-icon {
+        margin: 25px 20px 0 24px;
+    }
+
+    .paragraph-bold {
+        font-size: 1rem;
+        margin: 25px 94px 6px 0;
+    }
+
+    .price-year {
+        font-size: 16px;
+        margin-right: 94px;
+    }
+
+    .change {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .change:hover {
+       color: #766CF1;
+    }
+
+    button {
+        font-size: 15px;
+        margin: 32px 0 32px 0;
+        padding: 1.2em 6.7em;
+    }
+
+    button:hover {
+        background-color: #766CF1;
+    }
+
+    .cancel-order:hover {
+        color: #1F2E55;
+    }
+}
